@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Payroll Form</title>
-    <link rel="stylesheet" href="EmployeePayrollApp2.css">
+    <link rel="stylesheet" href="EmployeePayrollApp4.css">
+    <script defer src="EmployeePayrollData.js"></script>
+    <script defer src="EmployeePayrollApp4.js"></script>
 </head>
 <body>
     <header class="header-content header">
@@ -95,7 +97,6 @@
         <label class="label text" for="startDate">Start Date: </label>
         <div class="label text">
             <select id="day" name="Day">
-                <option value="day">Day</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -129,7 +130,6 @@
                 <option value="31">31</option>
             </select>
             <select id="month" name="Month">
-                <option value="month">Month</option>
                 <option value="Jan">January</option>
                 <option value="Feb">February</option>
                 <option value="Mar">March</option>
@@ -144,7 +144,6 @@
                 <option value="Dec">December</option>
             </select>
             <select id="year" name="Year">
-                <option value="year">Year</option>
                 <option value="2022">2022</option>
                 <option value="2021">2021</option>
                 <option value="2020">2020</option>
@@ -158,24 +157,17 @@
     <!--Ability to add Notes as well as cancel, reset and submit button so as to do some action on form entry-->
     <div class="row-content">
         <label class="label text" for="notes">Notes</label>
-        <textarea id="notes" class="input" name="Notes" placeholder="" style="height:100px"></textarea>
+        <textarea id="notes" class="input" name="notes" placeholder="" style="height:100px"></textarea>
     </div>
     <div class="buttonParent">
         <a href="index.html" class="resetButton button cancelButton">Cancel</a>
         <div class="submit-reset">
-            <button type="submit" class="button submitButton" onclick="openPopup()" id="submitButton">Submit</button>
-            <div class="popup" id="popup">
-                <img src="C:\Users\VISHNU VARDHAN REDDY\Downloads/tick.png">
-                <h2 style="color:red">Thank You!</h2>
-                <p style="color:blue">Your details has been submitted successfully.</p>
-                <button type="button" onclick="closePopup()">OK</button>
-            </div>
+            <button type="submit" class="button submitButton" id="submitButton">Submit</button>
             <button type="reset" class="resetButton button">Reset</button>
         </div>
     </div>    
 </form>
     </div>
-    <script src="EmployeePayrollData.js"></script>
-    <script src="EmployeePayrollApp3.js"></script>
+    
 </body>
 </html>
